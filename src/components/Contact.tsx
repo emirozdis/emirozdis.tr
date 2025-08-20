@@ -1,6 +1,5 @@
 "use client"
 
-import Link from "next/link";
 import { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
 

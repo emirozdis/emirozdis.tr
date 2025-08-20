@@ -15,7 +15,7 @@ export default function Hero() {
       </div>
 
       <h1 className="font-grotesk font-bold text-6xl sm:text-7xl md:text-8xl lg:text-[120px] text-primary mb-8 leading-none">
-        Hey, I'm Emir
+        Hey, I&apos;m Emir
       </h1>
 
       <p className="font-sans text-secondary text-xl md:text-2xl lg:text-[40px] max-w-5xl mx-auto leading-tight">
