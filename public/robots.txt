@@ -1,0 +1,13 @@
+# See https://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file
+#
+# Please note: The crawling outcome is a recommendation given by the robots.txt file and not a command.
+# Some crawlers may not follow it.
+#
+# To learn more about the Next.js robots.txt file, see:
+# https://nextjs.org/docs/app/api-reference/file-conventions/robots
+
+User-agent: *
+Allow: /
+
+# Update this with your actual domain
+Sitemap: https://emirozdis.com/sitemap.xml
