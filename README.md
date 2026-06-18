@@ -1,3 +1,4 @@
+![Screenshot](./screenshots/landing.png)
 # Emir Özdiş - Personal Portfolio
 
 Welcome to the official portfolio website of Emir Özdiş, a fullstack web developer. This site showcases my projects, skills, and professional experience, built with modern web technologies to provide a clean, minimal, and interactive user experience.
@@ -13,10 +14,13 @@ Welcome to the official portfolio website of Emir Özdiş, a fullstack web devel
 -   [Contact](#contact)
 -   [License](#license)
 
+![Screenshot](./screenshots/showcase.png)
+
 ## About
 
 This portfolio serves as a comprehensive online presence for Emir Özdiş, highlighting his expertise in fullstack development. It features detailed descriptions of various projects, a professional overview of his experience, and an easy way to get in touch. The site is designed to be fast, responsive, and highly optimized for search engines.
 
+![Screenshot](./screenshots/about.png)
 ## Features
 
 -   **Interactive Hero Section**: Engaging introduction to Emir Özdiş.
@@ -29,6 +33,7 @@ This portfolio serves as a comprehensive online presence for Emir Özdiş, highl
 -   **Responsive Design**: Built with Tailwind CSS to ensure a flawless experience across all devices.
 -   **Modern UI/UX**: Clean, minimal, and interactive design.
 
+![Screenshot](./screenshots/projects.png)
 ## Tech Stack
 
 -   **Frontend**: Next.js, React, TypeScript, Tailwind CSS, Lenis, next/font (Geist, Space Grotesk), React Icons, Cal.com Embed React
