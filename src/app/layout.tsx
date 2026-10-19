@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Contact from "@/components/Contact";
-import LenisProvider from "@/components/LenisProvider";
+import SiteFrame from "@/components/SiteFrame";
+import { SITE_URL } from "@/lib/site";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,8 +22,7 @@ const spaceGrotesk = Space_Grotesk({
 
 // SEO Enhancement: Added metadataBase, improved title/description, and added Open Graph/Twitter cards.
 export const metadata: Metadata = {
-  // IMPORTANT: Replace with your actual domain
-  metadataBase: new URL("https://emirozdis.com"),
+  metadataBase: new URL(SITE_URL),
   title: "Emir Özdiş - Fullstack Developer Portfolio",
   description:
     "Emir Özdiş is a fullstack web developer specializing in Next.js, TypeScript, and modern web technologies. Explore my projects, including Mystra, Tema v2, and Pratix AI.",
@@ -50,7 +48,7 @@ export const metadata: Metadata = {
       "Explore the portfolio of Emir Özdiş, a fullstack developer creating clean, minimal, and interactive web experiences.",
     // IMPORTANT: Create an og-image.png (1200x630) and place it in your /public folder
     images: ["/og-image.png"],
-    url: "https://emirozdis.com",
+    url: SITE_URL,
     siteName: "Emir Özdiş Portfolio",
     type: "website",
     locale: "en_US",
@@ -72,15 +70,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="!scroll-smooth">
-      <LenisProvider>
-        <body
-          className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} antialiased text-primary`}
-        >
-          <Navbar />
-          <main>{children}</main>
-          <Contact />
-        </body>
-      </LenisProvider>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} antialiased text-primary`}
+      >
+        <SiteFrame>{children}</SiteFrame>
+      </body>
     </html>
   );
 }

@@ -1,9 +1,10 @@
 import { MetadataRoute } from "next";
 import { projects } from "@/lib/projectData";
+import { SITE_URL } from "@/lib/site";
+import { gorensesPrivacy } from "@/content/gorenses-privacy";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // Replace with your actual domain
-  const baseUrl = "https://emirozdis.com";
+  const baseUrl = SITE_URL;
 
   const projectUrls = projects.map((project) => ({
     url: `${baseUrl}/projects/${project.id}`,
@@ -24,6 +25,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
+    },
+    {
+      url: gorensesPrivacy.url,
+      lastModified: new Date(`${gorensesPrivacy.updatedISO}T00:00:00Z`),
+      changeFrequency: "monthly",
+      priority: 0.5,
     },
     ...projectUrls,
   ];
